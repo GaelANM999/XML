@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE LigaBBVA [
+        <!ELEMENT LigaBBVA (FechaPartido,Partidos)*>
+        <!ELEMENT FechaPartido (#PCDATA)>
+        <!ELEMENT Partidos (Partido)+>
+        <!ELEMENT Partido (Equipos,Marcador,Anotadores)>
+        <!ELEMENT Equipos (Equipo1,Equipo2)+>
+        <!ELEMENT Equipo1 (#PCDATA)>
+        <!ELEMENT Equipo2 (#PCDATA)>
+        <!ELEMENT Marcador (#PCDATA)>
+        <!ELEMENT Anotadores (Anotador)*>
+        <!ELEMENT Anotador (Nombre,Minuto)*>
+        <!ELEMENT Nombre (#PCDATA)>
+        <!ELEMENT Minuto (#PCDATA)>
+        ]>
+<LigaBBVA>
+    <FechaPartido>Domingo 21 de Marzo 2023</FechaPartido>
+    <Partidos>
+        <Partido>
+            <Equipos>
+                <Equipo1>Toluca</Equipo1>
+                <Equipo2>America</Equipo2>
+            </Equipos>
+            <Marcador>1-1</Marcador>
+            <Anotadores>
+                <Anotador>
+                    <Nombre>Diego Valdes</Nombre>
+                    <Minuto>25</Minuto>
+                </Anotador>
+                <Anotador>
+                    <Nombre>Maximiliano Araujo</Nombre>
+                    <Minuto>54</Minuto>
+                </Anotador>
+            </Anotadores>
+        </Partido>
+    </Partidos>
+
+</LigaBBVA>
